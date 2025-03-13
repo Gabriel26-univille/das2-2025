@@ -73,10 +73,20 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - Automatizar práticas de segurança;
 
-- Autenticação de dois ou três fatores: o que eu sei (usuário e senha), sou (biometria) e tenho (chave de segurança);
+- Autenticação: Sempre usar autenticação de dois ou três fatores. O que eu sei (usuário e senha), sou (biometria) e tenho (chave de segurança);
 
 - Permissão: definir exatamente o que cada tipo de usuário pode acessar. Não dar mais acesso que o necessário (princípio do privilégio mínimo);
 
 - Usar criptografia: proteger dados em trânsito por meio de protocolos de criptografia;
 
-- IAM (Identity and Access Management);
+- IAM (Identity and Access Management): responsável por usuários, funções, políticas, grupos e usuários...
+
+## Aula 13/03/2025
+
+- AWS access key não expira (long-term credential), tornando necessário um sistema para gera novas keys de tempo em tempo;
+
+- Não usar usuário root para tarefas que outros usuários podem fazer. Habilitar MTA imediatamente no root;
+
+- Roles (funções) permitem trocar permissões dos usuários ("assumir um novo papel") a key de um role dura um tempo limitado;
+
+- Acesso pela console (acesso programático): Chave de acesso do role permite que o usuário faça ações fora de suas permições habituais;
