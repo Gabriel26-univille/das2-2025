@@ -89,4 +89,22 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - Roles (funções) permitem trocar permissões dos usuários ("assumir um novo papel") a key de um role dura um tempo limitado;
 
-- Acesso pela console (acesso programático): Chave de acesso do role permite que o usuário faça ações fora de suas permições habituais;
+- Acesso pela console (acesso programático): aws cli, aws sdk, aws api rest. Integração da aplicação com a AWS, Chave de acesso do role permite que o usuário faça ações fora de suas permições habituais;
+
+## Aula 17/03/2025
+
+- RBAC: role base access control - método de administrar acesso de usuários ao sistema baseado no seu papel na organização;
+
+- Policies são usadas para definir exatamente as permissões de cada usuário. Policies de identidade definem permissões baseado em cada usuário. Policies de recurso definem permissões por meio de documentos - permissão granular.
+
+- Todas tem efeito, ação e recurso. Nsário especificar usuário (principal) no caso de policy de recurso.
+
+- Tipos de armazenamento:
+
+- por blocos: ebs (elastic block storage) dados armazenados em blocos de tamanhos fixos, suportam edições no meio dos arquivos;
+
+- por arquivos: efs (elastic file system) FXs (file share), dados são armazenados em uma estrutura hierarquica, várias máquinas trocando arquivos por meio de uma máquina mais alta na estrutura;
+
+- por objetos: s3, dados são armazenados como objetos baseados em atributos e metadados;
+
+- S3: armazena uma quantidade ilimitada de dados não estruturados, mas apenas 5tb por objeto ou arquivo. Arquivos maiores são fracionados. Não é possível rodar BDs no S3. Todo objeto tem uma chave única.
