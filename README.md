@@ -107,4 +107,44 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - por objetos: s3, dados são armazenados como objetos baseados em atributos e metadados;
 
-- S3: armazena uma quantidade ilimitada de dados não estruturados, mas apenas 5tb por objeto ou arquivo. Arquivos maiores são fracionados. Não é possível rodar BDs no S3. Todo objeto tem uma chave única.
+- S3: armazena uma quantidade ilimitada de dados não estruturados, mas apenas 5tb por objeto ou arquivo. Arquivos maiores são fracionados. Não é possível rodar BDs no S3. Todo objeto tem uma chave única. Todos os objetos tem uma url pública, mas são bloqueados por padrão;
+
+- Não existem pastas no s3, essa divisão é feita por um prefixo no url;
+
+## Aula 20/03/2025
+
+- S3 tem durabilidade e disponibilidade de 99,99%;
+
+- usos do S3: sites estáticos, picos de demanda, recuperação de desastres, armazenamento de dados para análise;
+
+- storage gateway: servidor que serve como buffer, dados gravados nele são mandados para o s3;
+
+- Multipart upload: arquivos grandes são armazenados no S3 por meio de paralelização, o arquivo é fatiado em partes de tamanhos iguais e são reunídos depois;
+
+- Direct connect: usa cloudfront edge locations para criar caminhos mais curtos para acessar o S3 (diminuir latência por não entrar na internet pública);
+
+- transfer family: permite enviar e receber do s3 sem ter que alterar o protocolo de transferência de arquivos do seu software;
+
+- storage classes: forma como o S3 guarda a informação, define o preço e disponibilidade;
+
+- Classes quentes (acesso imediato ao objeteto armazenado): 
+
+- Standard: caro para armazenar, barato para baixar;
+
+- Standard-IA (infrequent access): mais barato para armazenar, mais caro para baixar. Para arquivos pouco acessados;
+
+- One zone-IA: faz apenas uma cópia do objeto ao invés de 3, tornando armazenamento mais barato;
+
+- Intelligent-tiering: Arquivos são monitorados no s3 e são movidos para a classe mais apropriada;
+
+- Classes frias (objetos precisam ser recuperados):
+
+- tem períodos mínimos para manter arquivos. custos extras são aplicados se baixar antes desse tempo;
+
+- Glacier deep archive: armazenamento offline, arquivos podem demorar de 12 a 48 horas para serem recuperados. Mais barato para armazenar;
+
+- Glacier flexible retrieval: mais rápido para baixar e mais caro que o deep archive;
+
+- Glacier instant retrieval: arquivo disponível instantaneamente, mas precisa passar por rehidratação para ser usado;
+
+- Outposts: Leva servidores da AWS fisicamente para dentro da sua empresa. Nuvem privada como se fosse uma região da sua empresa. Amplamente usado pelo governo brasileiro.
