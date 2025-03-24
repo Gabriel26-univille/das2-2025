@@ -2,7 +2,7 @@
 
 ## Gabriel Lopes
 
-## Aula 27/02/2025
+## Aula 27/02
 
 ### Trade-offs
 
@@ -23,7 +23,7 @@ IaC (Infrastructure as Code): Automatizar processos na infraestrutura usando có
 
 Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar que recursos como servidores sejam complexos ou não automatizados a ponto de serem insubstituíveis.
 
-## Aula 06/03/2025
+## Aula 06/03
 
 - Acoplamento: Dependência entre servidores da aplicação, um caso em que a queda do BD significa a queda da aplicação é um exemplo de alto acoplamento. Elastic Load Balancing (ELB) é um método para diminuir acoplamento;
 
@@ -49,7 +49,7 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - BD relacional: Tem escalabilidade vertical, feito para performace extrema. Não feito para ser dinâmico;
 
-## Aula 10/03/2025
+## Aula 10/03
 
 - Edge location (data center / server mais próximo do consumidor) busca dados do regional edge cache, que busca da origem;
 
@@ -81,7 +81,7 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - IAM (Identity and Access Management): responsável por usuários, funções, políticas, grupos e usuários...
 
-## Aula 13/03/2025
+## Aula 13/03
 
 - AWS access key não expira (long-term credential), tornando necessário um sistema para gera novas keys de tempo em tempo;
 
@@ -91,7 +91,7 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - Acesso pela console (acesso programático): aws cli, aws sdk, aws api rest. Integração da aplicação com a AWS, Chave de acesso do role permite que o usuário faça ações fora de suas permições habituais;
 
-## Aula 17/03/2025
+## Aula 17/03
 
 - RBAC: role base access control - método de administrar acesso de usuários ao sistema baseado no seu papel na organização;
 
@@ -111,7 +111,7 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - Não existem pastas no s3, essa divisão é feita por um prefixo no url;
 
-## Aula 20/03/2025
+## Aula 20/03
 
 - S3 tem durabilidade e disponibilidade de 99,99%;
 
@@ -148,3 +148,14 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 - Glacier instant retrieval: arquivo disponível instantaneamente, mas precisa passar por rehidratação para ser usado;
 
 - Outposts: Leva servidores da AWS fisicamente para dentro da sua empresa. Nuvem privada como se fosse uma região da sua empresa. Amplamente usado pelo governo brasileiro.
+
+## Aula 24/03
+
+- S3 Lifecycle: Conjunto de regras para transacionar entre classes ou expirar arquivos;
+
+- S3 versioning: Deve ser habilitado, não desabilitável. Pode ser pausado. Mantém a chave do objeto e cria uma version id diferente por versão. Apagar um objeto cria uma versãoque marca o objeto como apagado. Portanto apagar essa versão restaura o objeto. OBS: não é possível editar arquivos no S3.
+
+- CORS (cross-origin resource sharing): Forma de proteção para sites. Permissão para que um site acesse o conteúdo de outro;
+
+- Por padrão todo bucket é criptografado e privado;
+
