@@ -159,3 +159,6 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - Por padrão todo bucket é criptografado e privado;
 
+## Aula 27/03
+
+- No S3 se paga pelos gigas armazenados e por acessos aos arquivos;
