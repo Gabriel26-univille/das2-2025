@@ -159,6 +159,22 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - Por padrão todo bucket é criptografado e privado;
 
-## Aula 27/03
-
 - No S3 se paga pelos gigas armazenados e por acessos aos arquivos;
+
+## Aula 03/04
+
+- EC2: Elastic compute Cloud, permite criar e hospedar sistemas de software com capacidade computacional redimencionável;
+
+- Serve para qualquer coisa que necessite de um servidor;
+
+- AMI, uma "foto" do servidor, permitindo criar cópias idênticas do servidor original. Serve para recuperação e repetição;
+
+- EBS: Armazenamento persistente na EC2, diferente da instance store no host, que só armazena arquivos temporariamente;
+
+- quanto menos gerenciado, mais controle:
+
+- (menos gerenciado) Vms, Containers, VPS, PaaS, Serverless (mais gerenciado);
+
+- Compute optimizer: IA que recomenda recursos de computação da AWS mais eficientes para workloads, tem versão gratuita e paga;
+
+- File share: usar FSx para Windows, EFS para Linux;
