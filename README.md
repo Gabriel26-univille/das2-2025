@@ -199,5 +199,29 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - Segurança não pode depender de ação manual, abrir portas corretas do firewall, usar tamanho de máquina correto, escolher modelo de precificação correto, evitar desperdício;
 
+## Aula 10/04
+
+- Banco de dados: Scalability, Storage requirements, data characteristics, durability;
+
+- bd relacional: tabular com linhas e colunas, schema não flexível;
+
+- bd não relacional: variedade de modelos (chave valor, documento, grafos), schema flexível
+
+- Amazon RDS: Serviço de DB relacional que disponibiliza multiplas engines incluindo Amazon Aurora
+
+- Amazon DynamoDB, Amazon Neptune, Amazon ElastiCache: Serviços de DB não relacionais
+
+- Host DB on premises: todas as responsabilidades são do cliente;
+- Host DB in EC2: responsabilidade física da Amazon;
+- Host DB in RDS: tudo exceto otimização responsibilidade da Amazon;
+
+- Vantagens do RDS: seguro; alta disponibilidade, durabilidade e escalabilidade; e pouca necessidade de administração por parte do usuário;
+
+- Aurora: BD relacional da Amazon, compatível com MySQL e PostgreSQL, 5x mais rápido que o primeiro e 3x mais que o segundo;
+
+- Replicação de dados feito por storage e não por rede. Dados replicados em 3 AZs diferentes para alta disponibilidade;
+
+
+
 ## Heckel Funch
 ![Heckel Funch](https://64.media.tumblr.com/e5eafb6ba540566ad7a4151f77a4b2e4/c85dd9b3de9d7ab9-12/s250x400/e6e9cf81b4bf8d63236072e4853d7905e06d203c.pnj "Heckel Funch")
