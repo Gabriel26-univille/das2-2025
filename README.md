@@ -221,6 +221,24 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - Replicação de dados feito por storage e não por rede. Dados replicados em 3 AZs diferentes para alta disponibilidade;
 
+## Aula 17/04
+
+- Connection pooling: melhora a escalabilidade por meio de um rds proxy entre a aplicação e o BD, evitando a exaustão do servidor devivo às várias conexões;
+
+- Backups no RDS: automatizado (faz a cada 5 dias, retenção de 7 a 35 dias), snapshot (manual, retenção perpétua)
+
+- KMS: key management system, cofre de chaves;
+
+- Chave simétrica: a mesma chave que criptografa é a que descriptografa;
+
+- Chave assimétrica: as chaves que criptografam e descriptografam são diferentes;
+
+- DynamoDB: BD NoSQL, serverless, performance de um dígito de milisegundo. Ideal para arquitetura baseada em eventos. Ativo/ativo. Critpografia automática padrão, usa IAM roles para autenticar acesso.
+
+- Redshift: BD para data warehouse, para pesquisas pesadas e históricas.
+
+- Outros DBs disponibilizados na AWS: DocumentDB, Keyspaces, MemoryDB Neptune, Timestream, Quantum Ledger;
+
 
 
 ## Heckel Funch
