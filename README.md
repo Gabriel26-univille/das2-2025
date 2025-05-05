@@ -239,5 +239,17 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - Outros DBs disponibilizados na AWS: DocumentDB, Keyspaces, MemoryDB Neptune, Timestream, Quantum Ledger;
 
+## Aula 05/05
+
+### Redes
+
+- VPC (virtual private cloud): VN isolada com trágefo customizável. Cada uma pertence a apenas uma região
+
+- Níveis de isolamento: Conta AWS -> VPCs
+
+- Regra da tabela de rotas: Computadores da rede podem falar entre sí
+
+- Subnet pública: recursos dentro dela visíveis de fora pra dentro e vice versa
+
 ## Heckel Funch
 ![Heckel Funch](https://64.media.tumblr.com/e5eafb6ba540566ad7a4151f77a4b2e4/c85dd9b3de9d7ab9-12/s250x400/e6e9cf81b4bf8d63236072e4853d7905e06d203c.pnj "Heckel Funch")
