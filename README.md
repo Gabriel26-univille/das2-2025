@@ -251,5 +251,37 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - Subnet pública: recursos dentro dela visíveis de fora pra dentro e vice versa
 
+## Aula 08/05
+
+- Máquinas tem 2 tipos de IPs associados a ela, o privado e o público, o qual só o primeiro a máquina em sí conhece
+
+- IP público dinâmico (muda ocasionamente), IP público fixo (não muda, para sites por exemplo)
+
+- Subnet privada não tem acesso direto à internet. Nada fora da VPC, nem serviços da AWS
+
+- Conexão apenas de dentro pra fora na subnet privada possível por meio de uma subnet pública com NAT gateway que recebe o pedido da subnet privada e manda pra internet
+
+- NAT gateway cobra por hora e dado processado
+
+- BD e processamento batch na privada  
+
+- Aplicação web e NAT gateway na púbilca
+
+- Security group: firewall da subnet
+
+- Bastion host: tecnica de segurança que permite acessar a internet de uma subnet privada através de uma pública
+
+- Interface VPC endpoint: permite conectar serviços da AWS a uma subnet privada, mas é pago
+
+- Gateway VPC endpoint: gratuíto mas só conecta a S3 e DynamoDB, necessário configurar individualmente por serviço
+
+- Load balancer: balanceador de carga, distribui carga entre várias máquinas
+
+- Gateway load balancer: desvio exposto pra internet que envia para load balancers
+
+- VPC flow log: ferramenta de troubleshooting de rede
+
+
+
 ## Heckel Funch
 ![Heckel Funch](https://64.media.tumblr.com/e5eafb6ba540566ad7a4151f77a4b2e4/c85dd9b3de9d7ab9-12/s250x400/e6e9cf81b4bf8d63236072e4853d7905e06d203c.pnj "Heckel Funch")
