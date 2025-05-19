@@ -281,7 +281,17 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - VPC flow log: ferramenta de troubleshooting de rede
 
+## Aula 19/05
 
+- topologia full mesh: todas as vpcs falam entre sí
+
+- topologia hub and spoke (shared vpc): hub com serviços compartilhados que se conecta com todas as vpcs
+
+- transit gateway: ajuda a criar essas topologias, seviço pago e regional. Cria até 5000 conexões
+
+- vcp peering: conexão entre vpcs, gratúito se ambas estão na mesma região, pago senão
+
+- direct connect: conexão exclusiva criada por meio de um circúito do servidor da região até você
 
 ## Heckel Funch
 ![Heckel Funch](https://64.media.tumblr.com/e5eafb6ba540566ad7a4151f77a4b2e4/c85dd9b3de9d7ab9-12/s250x400/e6e9cf81b4bf8d63236072e4853d7905e06d203c.pnj "Heckel Funch")
