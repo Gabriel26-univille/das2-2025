@@ -293,5 +293,17 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - direct connect: conexão exclusiva criada por meio de um circúito do servidor da região até você
 
+- VPN Site to Site: Permite acesso à rede a partir da vpc por um gateway privada virtual
+
+## Aula 26/05
+
+- IAM groups: criar um conjunto de permissões e atribuir usuários à esse grupo, simplificando o gerenciamento de permissões
+
+- RBAC: Tipo de permissão onde é criado um papel que um usuário pode assumir temporariamente 
+
+- ABAC: Permite definir permissões com base em atributos associados a um grupo
+
+- Amazon Cognito: Serviço que provê autenticação, autorização, e gerenciamento de usuários.
+
 ## Heckel Funch
 ![Heckel Funch](https://64.media.tumblr.com/e5eafb6ba540566ad7a4151f77a4b2e4/c85dd9b3de9d7ab9-12/s250x400/e6e9cf81b4bf8d63236072e4853d7905e06d203c.pnj "Heckel Funch")
