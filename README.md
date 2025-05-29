@@ -297,13 +297,31 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 ## Aula 26/05
 
-- IAM groups: criar um conjunto de permissões e atribuir usuários à esse grupo, simplificando o gerenciamento de permissões
+- IAM groups: criar um conjunto de permissões e atribuir usuários à esse grupo, simplificando o gerenciamento de permissões;
 
-- RBAC: Tipo de permissão onde é criado um papel que um usuário pode assumir temporariamente 
+- RBAC: Tipo de permissão onde é criado um papel que um usuário pode assumir temporariamente;
 
-- ABAC: Permite definir permissões com base em atributos associados a um grupo
+- ABAC: Permite definir permissões com base em atributos associados a um grupo;
 
 - Amazon Cognito: Serviço que provê autenticação, autorização, e gerenciamento de usuários.
+
+## Aula 29/05
+
+- Empresas se organizam com uma conta da AWS para a empresa e VPCs para cada equipe ou uma conta AWS por equipe na empresa;
+
+- AWS Organizations é uma ferramenta para gerir multiplas contas da AWS no caso dessas empresas;
+
+- Conta root envia convites para outras contas, formando uma hierarquia de contas. O que dá acesso ao billing consolidado do AWS Organizations;
+
+- AWS Control Tower: Cria uma estrutura completa da AWS usando as melhores práticas, ideal para grandes organizações;
+
+- Confiabiliade, integridade e disponibilidade. Sempre 1 é sacrificado para garantir as outras;
+
+- AWS Key management service: cria e administra chaves de criptografia;
+
+- Amazon Macie: varredura de arquivos para encontrar dados com informações sensíveis;
+
+- Amazon inspector: Encontra vulnerabilidades conhecidas em EC2 e ECR;
 
 ## Heckel Funch
 ![Heckel Funch](https://64.media.tumblr.com/e5eafb6ba540566ad7a4151f77a4b2e4/c85dd9b3de9d7ab9-12/s250x400/e6e9cf81b4bf8d63236072e4853d7905e06d203c.pnj "Heckel Funch")
