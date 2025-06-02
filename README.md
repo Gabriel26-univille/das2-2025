@@ -307,9 +307,9 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 ## Aula 29/05
 
-- Empresas se organizam com uma conta da AWS para a empresa e VPCs para cada equipe ou uma conta AWS por equipe na empresa;
+- Empresas se organizam de duas formas: uma conta da AWS para a empresa e VPCs para cada equipe, ou uma conta AWS por equipe na empresa;
 
-- AWS Organizations é uma ferramenta para gerir multiplas contas da AWS no caso dessas empresas;
+- AWS Organizations é uma ferramenta para gerir multiplas contas da AWS no segundo caso;
 
 - Conta root envia convites para outras contas, formando uma hierarquia de contas. O que dá acesso ao billing consolidado do AWS Organizations;
 
@@ -322,6 +322,18 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 - Amazon Macie: varredura de arquivos para encontrar dados com informações sensíveis;
 
 - Amazon inspector: Encontra vulnerabilidades conhecidas em EC2 e ECR;
+
+## Aula 02/06
+
+- funções do monitoramento da aplicação: saúde operacional da aplicação, otimização de recursos, performance e segurança;
+
+- CloudWatch: ferramenta para coletr, armazenar e analizar métricas da aplicação;
+
+- CloudWatch gera métricas padrão e customizáveis, gráficos e alertas;
+
+- EventBridge: barramento de eventos, monioramento em tempo real da AWS;
+
+
 
 ## Heckel Funch
 ![Heckel Funch](https://64.media.tumblr.com/e5eafb6ba540566ad7a4151f77a4b2e4/c85dd9b3de9d7ab9-12/s250x400/e6e9cf81b4bf8d63236072e4853d7905e06d203c.pnj "Heckel Funch")
