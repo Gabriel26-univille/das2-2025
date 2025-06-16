@@ -333,6 +333,23 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - EventBridge: barramento de eventos, monioramento em tempo real da AWS;
 
+## Aula 16/06
+
+- Cada BD na AWS é escalado de uma forma diferente: 
+
+- Aurora: por cluster, vertical e horizontal;
+
+- RDS: por banco, principalmente vertical + réplicas de leitura;
+
+- DynamoDB: Horizontal com RCUs e WCUs.
+
+- ELB (Elastic Load Balancer): Distribui tráfego para múltiplos alvos em uma ou mais AZs. Checa saúde das máquinas antes de mandar requisições
+
+- Tipos de load balancer: application, network, gateway, classic
+
+- Route 53: web service para administrar registros de domínios
+
+
 
 
 ## Heckel Funch
