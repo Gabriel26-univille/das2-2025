@@ -225,7 +225,7 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - Connection pooling: melhora a escalabilidade por meio de um rds proxy entre a aplicação e o BD, evitando a exaustão do servidor devivo às várias conexões;
 
-- Backups no RDS: automatizado (faz a cada 5 dias, retenção de 7 a 35 dias), snapshot (manual, retenção perpétua)
+- Backups no RDS: automatizado (faz a cada 5 dias, retenção de 7 a 35 dias), snapshot (manual, retenção perpétua);
 
 - KMS: key management system, cofre de chaves;
 
@@ -233,67 +233,67 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - Chave assimétrica: as chaves que criptografam e descriptografam são diferentes;
 
-- DynamoDB: BD NoSQL, serverless, performance de um dígito de milisegundo. Ideal para arquitetura baseada em eventos. Ativo/ativo. Critpografia automática padrão, usa IAM roles para autenticar acesso.
+- DynamoDB: BD NoSQL, serverless, performance de um dígito de milisegundo. Ideal para arquitetura baseada em eventos. Ativo/ativo. Critpografia automática padrão, usa IAM roles para autenticar acesso;
 
-- Redshift: BD para data warehouse, para pesquisas pesadas e históricas.
+- Redshift: BD para data warehouse, para pesquisas pesadas e históricas;
 
-- Outros DBs disponibilizados na AWS: DocumentDB, Keyspaces, MemoryDB Neptune, Timestream, Quantum Ledger;
+- Outros DBs disponibilizados na AWS: DocumentDB, Keyspaces, MemoryDB Neptune, Timestream, Quantum Ledger.
 
 ## Aula 05/05
 
 ### Redes
 
-- VPC (virtual private cloud): VN isolada com trágefo customizável. Cada uma pertence a apenas uma região
+- VPC (virtual private cloud): VN isolada com trágefo customizável. Cada uma pertence a apenas uma região;
 
-- Níveis de isolamento: Conta AWS -> VPCs
+- Níveis de isolamento: Conta AWS -> VPCs;
 
-- Regra da tabela de rotas: Computadores da rede podem falar entre sí
+- Regra da tabela de rotas: Computadores da rede podem falar entre sí;
 
-- Subnet pública: recursos dentro dela visíveis de fora pra dentro e vice versa
+- Subnet pública: recursos dentro dela visíveis de fora pra dentro e vice versa.
 
 ## Aula 08/05
 
-- Máquinas tem 2 tipos de IPs associados a ela, o privado e o público, o qual só o primeiro a máquina em sí conhece
+- Máquinas tem 2 tipos de IPs associados a ela, o privado e o público, o qual só o primeiro a máquina em sí conhece;
 
-- IP público dinâmico (muda ocasionamente), IP público fixo (não muda, para sites por exemplo)
+- IP público dinâmico (muda ocasionamente), IP público fixo (não muda, para sites por exemplo);
 
-- Subnet privada não tem acesso direto à internet. Nada fora da VPC, nem serviços da AWS
+- Subnet privada não tem acesso direto à internet. Nada fora da VPC, nem serviços da AWS;
 
-- Conexão apenas de dentro pra fora na subnet privada possível por meio de uma subnet pública com NAT gateway que recebe o pedido da subnet privada e manda pra internet
+- Conexão apenas de dentro pra fora na subnet privada possível por meio de uma subnet pública com NAT gateway que recebe o pedido da subnet privada e manda pra internet;
 
-- NAT gateway cobra por hora e dado processado
+- NAT gateway cobra por hora e dado processado;
 
-- BD e processamento batch na privada  
+- BD e processamento batch na privada;
 
-- Aplicação web e NAT gateway na púbilca
+- Aplicação web e NAT gateway na púbilca;
 
-- Security group: firewall da subnet
+- Security group: firewall da subnet;
 
-- Bastion host: tecnica de segurança que permite acessar a internet de uma subnet privada através de uma pública
+- Bastion host: tecnica de segurança que permite acessar a internet de uma subnet privada através de uma pública;
 
-- Interface VPC endpoint: permite conectar serviços da AWS a uma subnet privada, mas é pago
+- Interface VPC endpoint: permite conectar serviços da AWS a uma subnet privada, mas é pago;
 
-- Gateway VPC endpoint: gratuíto mas só conecta a S3 e DynamoDB, necessário configurar individualmente por serviço
+- Gateway VPC endpoint: gratuíto mas só conecta a S3 e DynamoDB, necessário configurar individualmente por serviço;
 
-- Load balancer: balanceador de carga, distribui carga entre várias máquinas
+- Load balancer: balanceador de carga, distribui carga entre várias máquinas;
 
-- Gateway load balancer: desvio exposto pra internet que envia para load balancers
+- Gateway load balancer: desvio exposto pra internet que envia para load balancers;
 
-- VPC flow log: ferramenta de troubleshooting de rede
+- VPC flow log: ferramenta de troubleshooting de rede.
 
 ## Aula 19/05
 
 - topologia full mesh: todas as vpcs falam entre sí
 
-- topologia hub and spoke (shared vpc): hub com serviços compartilhados que se conecta com todas as vpcs
+- topologia hub and spoke (shared vpc): hub com serviços compartilhados que se conecta com todas as vpcs;
 
-- transit gateway: ajuda a criar essas topologias, seviço pago e regional. Cria até 5000 conexões
+- transit gateway: ajuda a criar essas topologias, seviço pago e regional. Cria até 5000 conexões;
 
-- vcp peering: conexão entre vpcs, gratúito se ambas estão na mesma região, pago senão
+- vcp peering: conexão entre vpcs, gratúito se ambas estão na mesma região, pago se não;
 
-- direct connect: conexão exclusiva criada por meio de um circúito do servidor da região até você
+- direct connect: conexão exclusiva criada por meio de um circúito do servidor da região até você;
 
-- VPN Site to Site: Permite acesso à rede a partir da vpc por um gateway privada virtual
+- VPN Site to Site: Permite acesso à rede a partir da vpc por um gateway privada virtual.
 
 ## Aula 26/05
 
@@ -321,7 +321,7 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - Amazon Macie: varredura de arquivos para encontrar dados com informações sensíveis;
 
-- Amazon inspector: Encontra vulnerabilidades conhecidas em EC2 e ECR;
+- Amazon inspector: Encontra vulnerabilidades conhecidas em EC2 e ECR.
 
 ## Aula 02/06
 
@@ -331,7 +331,7 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - CloudWatch gera métricas padrão e customizáveis, gráficos e alertas;
 
-- EventBridge: barramento de eventos, monioramento em tempo real da AWS;
+- EventBridge: barramento de eventos, monioramento em tempo real da AWS.
 
 ## Aula 16/06
 
@@ -341,16 +341,23 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - RDS: por banco, principalmente vertical + réplicas de leitura;
 
-- DynamoDB: Horizontal com RCUs e WCUs.
+- DynamoDB: Horizontal com RCUs e WCUs;
 
-- ELB (Elastic Load Balancer): Distribui tráfego para múltiplos alvos em uma ou mais AZs. Checa saúde das máquinas antes de mandar requisições
+- ELB (Elastic Load Balancer): Distribui tráfego para múltiplos alvos em uma ou mais AZs. Checa saúde das máquinas antes de mandar requisições;
 
-- Tipos de load balancer: application, network, gateway, classic
+- Tipos de load balancer: application, network, gateway, classic;
 
-- Route 53: web service para administrar registros de domínios
+- Route 53: web service para administrar registros de domínios.
 
+## Aula 23/06
 
+- Benefícios da automação: produtividade, escala, menos probabilidade de erro;
 
+- CloudFormation: ferramenta de criação, atualização ou remoção de recursos de forma atualzada;
+
+- Drift detection: compara estado atual com o template e notifica ou corrige diferenças automaticamente;
+
+- Amazon Q: IA generativa assistente de programação;
 
 ## Heckel Funch
 ![Heckel Funch](https://64.media.tumblr.com/e5eafb6ba540566ad7a4151f77a4b2e4/c85dd9b3de9d7ab9-12/s250x400/e6e9cf81b4bf8d63236072e4853d7905e06d203c.pnj "Heckel Funch")
