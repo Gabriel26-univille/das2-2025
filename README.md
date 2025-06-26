@@ -359,5 +359,13 @@ Tratar recursos como descartáveis: Recursos devem ser substituíveis, evitar qu
 
 - Amazon Q: IA generativa assistente de programação;
 
+## 26/06
+
+- Load balancer: é possívl usar load balancers para reduzir acoplamento entre camadas da aplicação;
+
+- Ao invés de usar um monolito, dividir a aplicação em módulos reduz acoplamento;
+
+- Simple queue service: Serviço de fila de mensagens da AWS, permite múltiplos produtores e consumidores, os quais só recebem uma cópia de cada mensagem;
+
 ## Heckel Funch
 ![Heckel Funch](https://64.media.tumblr.com/e5eafb6ba540566ad7a4151f77a4b2e4/c85dd9b3de9d7ab9-12/s250x400/e6e9cf81b4bf8d63236072e4853d7905e06d203c.pnj "Heckel Funch")
